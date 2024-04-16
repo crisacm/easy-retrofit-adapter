@@ -1,0 +1,69 @@
+[versions]
+agp = "8.5.0-alpha05"
+kotlin = "1.9.0"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+activity = "1.8.2"
+constraintlayout = "2.1.4"
+
+moshi = "1.15.1"
+timber = "5.0.1"
+retrofit = "2.9.0"
+okHttp = "4.12.0"
+glide = "4.16.0"
+coroutines = "1.8.0"
+hilt = "2.51"
+hilt-work = "1.2.0"
+recyclerView = "1.3.2"
+androidxFragment = "1.6.2"
+androidxLifecycle = "2.7.0"
+androidXStartup = "1.1.1"
+dataBinding = "7.8.0"
+bindables = "1.1.0"
+work-runtime = "2.9.0"
+paging = "3.2.1"
+flexbox = "3.0.0"
+
+ksp = "1.9.0-1.0.13"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "androidxFragment" }
+androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+androidx-startup = { module = "androidx.startup:startup-runtime", version.ref = "androidXStartup" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+moshi = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
+moshi-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi" }
+retrofit = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+retrofit-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+okhttp-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okHttp" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hilt-work" }
+hilt-work-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt-work" }
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerView" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+dataBinding = { module = "androidx.databinding:databinding-runtime", version.ref = "dataBinding" }
+bindables = { module = "com.github.skydoves:bindables", version.ref = "bindables" }
+work-runtime = { module = "androidx.work:work-runtime-ktx", version.ref = "work-runtime" }
+paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+flexbox = { module = "com.google.android.flexbox:flexbox", version.ref = "flexbox" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }

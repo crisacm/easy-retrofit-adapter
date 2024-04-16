@@ -1,0 +1,16 @@
+package com.github.crisacm.module.easyretrofit.adapter
+
+import com.github.crisacm.module.easyretrofit.model.ApiResult
+import retrofit2.Call
+import retrofit2.CallAdapter
+import com.github.crisacm.module.easyretrofit.model.ApiResultCall
+import java.lang.reflect.Type
+
+internal class ApiResultCallAdapter<T>(
+    private val successType: Type,
+) : CallAdapter<T, Call<ApiResult<T>>> {
+
+    override fun responseType(): Type = successType
+
+    override fun adapt(call: Call<T>): Call<ApiResult<T>> = ApiResultCall(call)
+}
