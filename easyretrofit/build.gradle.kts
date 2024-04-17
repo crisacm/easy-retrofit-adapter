@@ -37,7 +37,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.crisacm"
             artifactId = "easy-retrofit-adapters"
-            version = "1.0.0"
+            version = "1.0.1"
 
             afterEvaluate {
                 from(components["release"])
