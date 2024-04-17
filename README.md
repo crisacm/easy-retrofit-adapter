@@ -15,7 +15,7 @@ Add below codes to your root build.gradle file (not your module build.gradle fil
 Then add the dependency to the `builde.gralde` of your module
 ```kt
   dependencies {
-    implementation "com.github.crisacm:easyretrofit:1.0.0"
+    implementation("com.github.crisacm:easyretrofit:1.0.1")
   }
 ```
 ## How to use
