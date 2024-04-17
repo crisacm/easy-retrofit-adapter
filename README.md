@@ -55,5 +55,3 @@ Then add the dependency to the `builde.gralde` of your module
 ```
 
 The use of suspended functions can also work with the `onSuspendSuccess`, `onSuspendFailed` and `onSuspendError` functions.# easy-retrofit-adapters
-
-Android library to simplify Retrofit calls and manage response states like Success, Failed and Error.
