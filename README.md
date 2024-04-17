@@ -7,7 +7,7 @@ Add below codes to your root build.gradle file (not your module build.gradle fil
 ```kt
   allprojects {
     repositories {
-        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
     }
 }
 ```
